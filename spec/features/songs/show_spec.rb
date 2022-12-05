@@ -13,7 +13,7 @@ RSpec.describe 'the songs show page' do
   end
 
   it 'displays the name of the artist for the song' do 
-    artist = Artist.create!(name: "Viper")
+    artist = Artist.creat!(name: "Viper")
     song = artist.songs.create!(title: "The Song Song", length: 1, play_count: 2)
 
     visit "/songs/#{song.id}"
